@@ -314,7 +314,7 @@ MARA is in active development. Contributions, ideas, and feedback are welcome.
 
 ```bash
 # Fork the repo
-git clone https://github.com/KEITH-GJINO/mara.git
+git clone https://github.com/YOUR-USERNAME/mara.git
 cd mara
 
 # Create a virtual environment
