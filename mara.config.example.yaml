@@ -1,0 +1,29 @@
+# MARA Configuration
+# Copy to mara.config.yaml and adjust for your environment.
+
+runtime:
+  max_concurrent_agents: 5
+  default_timeout: 300
+  retry_policy:
+    max_retries: 3
+    backoff_factor: 2
+
+memory:
+  backend: "sqlite"
+  retention_days: 90
+  embedding_model: "default"
+
+llm:
+  provider: "anthropic"
+  model: "claude-sonnet-4-20250514"
+  temperature: 0.3
+  max_tokens: 4096
+
+approval:
+  default: false
+  high_stakes_actions: true
+  notification_channel: "slack"
+
+logging:
+  level: "INFO"
+  format: "structured"
